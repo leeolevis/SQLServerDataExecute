@@ -1,0 +1,112 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ArrayOfERPObject xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+
+  <ERPObject>
+    <ObjectName desc="业务类型">业务巡检</ObjectName>
+    <ERPTables desc="业务类型子表">
+
+      <ERPTable>
+        <TableName>myBusinessUnit</TableName>
+        <TableKey>BUGUID</TableKey>
+        <TableDesc>商业单位</TableDesc>
+        <TableProps desc="字段">
+          <TableProp>CreatedOn</TableProp>
+          <TableProp>ModifiedOn</TableProp>
+        </TableProps>
+      </ERPTable>
+
+      <ERPTable>
+        <TableName>myStation</TableName>
+        <TableKey>StationGUID</TableKey>
+        <TableDesc>岗位表</TableDesc>
+        <TableProps desc="字段">
+        <TableProp>StationCode</TableProp>
+        <TableProp>OrderCode</TableProp>
+        <TableProp>HierarchyCode</TableProp>
+        </TableProps>
+      </ERPTable>
+
+      <ERPTable>
+        <TableName>myStationUser</TableName>
+        <TableKey>StationUserGUID</TableKey>
+        <TableDesc>岗位成员表</TableDesc>
+        <TableProps desc="字段">
+        </TableProps>
+      </ERPTable>
+
+      <ERPTable>
+        <TableName>myStationObject</TableName>
+        <TableKey>StationGUID,ObjectType,ObjectGUID</TableKey>
+        <TableDesc>岗位数据权限表</TableDesc>
+        <TableProps desc="字段">
+        <TableProp>StationObjectGUID</TableProp>
+        </TableProps>
+      </ERPTable>
+
+      <ERPTable>
+        <TableName>p_Project</TableName>
+        <TableKey>ProjGUID</TableKey>
+        <TableDesc>项目信息</TableDesc>
+        <TableProps>
+          <TableProp>PublishTime</TableProp>
+        </TableProps>
+      </ERPTable>
+
+      <ERPTable>
+        <TableName>cb_Product</TableName>
+        <TableKey>ProductGUID</TableKey>
+        <TableDesc>产品设置表</TableDesc>
+        <TableProps>
+        </TableProps>
+      </ERPTable>
+
+      <ERPTable>
+        <TableName>cb_sjkProductIndex</TableName>
+        <TableKey>ProductIndexGUID</TableKey>
+        <TableDesc>产品规划指标表</TableDesc>
+        <TableProps>
+        </TableProps>
+      </ERPTable>
+
+      <ERPTable>
+        <TableName>myUser</TableName>
+        <TableKey>UserGUID</TableKey>
+        <TableDesc>用户表</TableDesc>
+        <TableProps>
+          <TableProp>CreatedOn</TableProp>
+          <TableProp>ModifiedOn</TableProp>
+          <TableProp>PSWModifyTime</TableProp>
+          <TableProp>IsMobileUser</TableProp>
+        </TableProps>
+      </ERPTable>
+
+      <ERPTable>
+        <TableName>cb_sjkProjectIndex</TableName>
+        <TableKey>ProjectIndexGUID</TableKey>
+        <TableDesc>项目规划指标表</TableDesc>
+        <TableProps>
+        <TableProp>SumBuildCount</TableProp>
+        </TableProps>
+      </ERPTable>
+
+      <ERPTable>
+        <TableName>myPasswordPolicy</TableName>
+        <TableKey></TableKey>
+        <TableDesc>密码策略设置表</TableDesc>
+        <TableProps>
+          <TableProp>ModifyTime</TableProp>
+        </TableProps>
+      </ERPTable>
+
+      <ERPTable>
+        <TableName>MyUserToOrg</TableName>
+        <TableKey>UserGuid,OrgGuid</TableKey>
+        <TableDesc>用户与组织关联</TableDesc>
+        <TableProps >
+        </TableProps>
+      </ERPTable>
+
+    </ERPTables>
+  </ERPObject>
+
+</ArrayOfERPObject>
